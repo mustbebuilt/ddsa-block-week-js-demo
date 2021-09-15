@@ -9,6 +9,13 @@
         var rotSeconds = (mySeconds * 6) - 90
         document.getElementById('secondHand').style.transform = 
 'rotate('+rotSeconds+'deg)'
-    }
-
+var myMinutes = myDate.getMinutes()
+var rotMinutes = (myMinutes * 6) -90
+document.getElementById('minHand').style.transform = 'rotate('+rotMinutes+'deg)'
+        var myHours = myDate.getHours()
+        myHours = myHours + (myMinutes/60)
+        var rotHours = (myHours * 30) -90
+        document.getElementById('hrHand').style.transform = 'rotate('+rotHours+'deg)'
+         
+}
 })();
