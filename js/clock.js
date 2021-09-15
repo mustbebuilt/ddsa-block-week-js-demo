@@ -10,6 +10,7 @@
         document.getElementById('secondHand').style.transform = 
 'rotate('+rotSeconds+'deg)'
 var myMinutes = myDate.getMinutes()
+myMinutes = myMinutes + (mySeconds/60)
 var rotMinutes = (myMinutes * 6) -90
 document.getElementById('minHand').style.transform = 'rotate('+rotMinutes+'deg)'
         var myHours = myDate.getHours()
